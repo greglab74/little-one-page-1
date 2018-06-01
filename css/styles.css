@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+:root {
+    --source: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--source);
+}
+
+main {
+    width: 980px;
+    margin: auto;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    outline: none;
+}
+
+/********************************************************************
+
+                            HEADER
+
+********************************************************************/
+header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../img/patate.jpg');
+    background-size: 120%;
+    background-position-y: center;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+#head-title p, h2 {
+    font-size: 36px;
+}
+
+/********************************************************************
+
+                            NAVIGATION
+
+********************************************************************/
+nav ul {
+    height: 60px;
+    text-align: center;
+    background-color: rgb(235, 57, 57);
+    -webkit-box-shadow: 0 0 15px 0 #787878;
+    box-shadow: 0 0 15px 0 #787878;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 100%;
+}
+
+nav a {
+    display: block;
+    height: 100%;
+    width: 132px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding-top: 18px;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+nav li:first-child a {
+    border-right: none;
+}
+
+nav li:last-child a {
+    border-left: none;
+}
+
+/********************************************************************
+
+                            SECTIONS
+
+********************************************************************/
+section {
+    padding: 35px 0;
+}
+
+h2 {
+    min-height: 50px;
+    margin-bottom: 25px;
+}
+
+h2 span {
+    padding-left: 50px;
+    position: relative;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+h2 i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section > p {
+    margin-bottom: 35px;
+}
+
+/********************************************************************
+
+                            SECTION 1
+
+********************************************************************/
+#cartes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carte {
+    width: 150px;
+    margin: 0 12px 20px 0px;
+}
+
+.carte img {
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+}
+
+.nom {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/********************************************************************
+
+                            SECTION 2
+
+********************************************************************/
+#map iframe {
+    width: 100%;
+}
+
+/********************************************************************
+
+                            SECTION 3
+
+********************************************************************/
+#contact {
+    display: flex;
+}
+
+#contact img {
+    width: 480px;
+    height: auto;
+    margin-right: 50px;
+}
+
+form {
+    flex-grow: 1;
+    position: relative;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    color: rgb(221, 219, 219);
+    font-size: 1rem;
+}
+
+.field {
+    display: flex;
+    border: 1px solid rgb(221, 219, 219);
+    margin-bottom: 18px;
+}
+
+.field span {
+    display: block;
+    position: relative;
+    width: 60px;
+}
+
+.field i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(221, 219, 219);
+}
+
+form input {
+    height: 58px;
+    padding-right: 20px;
+}
+
+.field:last-child i { /* ne marche pas ??? */
+    top: 20% !important;
+    transform: translate(-50%, -80%) !important;
+}
+
+form textarea {
+    resize: none;
+    height: 151px;
+    margin-bottom: 34px;
+    padding: 20px 20px 20px 0px;
+}
+
+form input[type="submit"] {
+    width: 160px;
+    height: 40px;
+    margin: auto;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(164, 88, 235);
+    -webkit-box-shadow: 0 5px 40px 0 #939EB3;
+    box-shadow: 0 5px 40px 0 #939EB3;
+    cursor: pointer;
+}
+
+/********************************************************************
+
+                            FOOTER
+
+********************************************************************/
+footer {
+    position: relative;
+    margin-top: 35px;
+    height: 150px;
+    background-color: rgb(21, 113, 233);
+}
+
+footer ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    vertical-align: center;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer a {
+    display: block;
+    color: white;
+    margin: 0 20px;
+    font-size: 48px;
+}
