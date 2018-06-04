@@ -6,15 +6,11 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--source);
-}
-
-main {
-    width: 980px;
-    margin: auto;
 }
 
 p {
@@ -51,6 +47,24 @@ h1 {
     font-size: 2.4rem;
 }
 
+#head-title {
+    animation: roue 6s ease-in-out infinite;
+}
+
+@keyframes roue {
+    0% {
+        transform: rotateY(360deg);
+    }
+
+    10% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
 /********************************************************************
 
                             NAVIGATION
@@ -60,8 +74,8 @@ nav ul {
     height: 60px;
     text-align: center;
     background-color: rgb(235, 57, 57);
-    -webkit-box-shadow: 0 0 15px 0 #787878;
-    box-shadow: 0 0 15px 0 #787878;
+    -webkit-box-shadow: 0 5px 8px 0 #aaa;
+    box-shadow: 0 5px 8px 0 #aaa;
 }
 
 nav ul li {
@@ -100,6 +114,8 @@ nav li:last-child a {
 ********************************************************************/
 section {
     padding: 35px 0;
+    width: 980px;
+    margin: auto;
 }
 
 h2 {
@@ -144,6 +160,13 @@ section > p {
     height: auto;
     max-width: 100%;
     border-radius: 4px;
+
+    transition: transform 0.8s;
+}
+
+.carte img:hover {
+    transition: transform 20s;
+    transform: scale(6, 6);
 }
 
 .nom {
@@ -156,7 +179,7 @@ section > p {
                             SECTION 2
 
 ********************************************************************/
-#map iframe {
+iframe {
     width: 100%;
 }
 
