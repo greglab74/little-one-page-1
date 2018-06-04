@@ -32,8 +32,9 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: black;
     background-image: url('../img/patate.jpg');
-    background-size: 120%;
+    background-size: cover;
     background-position-y: center;
     color: white;
 }
@@ -161,12 +162,13 @@ section > p {
     max-width: 100%;
     border-radius: 4px;
 
-    transition: transform 0.8s;
+    transition: transform 0.8s, filter 0.8s;
 }
 
 .carte img:hover {
-    transition: transform 20s;
+    transition: transform 20s, filter 20s;
     transform: scale(6, 6);
+    filter: saturate(10);
 }
 
 .nom {
