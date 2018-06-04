@@ -18,7 +18,7 @@ main {
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 a {
@@ -43,12 +43,12 @@ header {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
 #head-title p, h2 {
-    font-size: 36px;
+    font-size: 2.4rem;
 }
 
 /********************************************************************
@@ -75,7 +75,7 @@ nav a {
     width: 132px;
     border-left: 2px solid white;
     border-right: 2px solid white;
-    font-size: 22px;
+    font-size: 1.4rem;
     color: white;
     text-decoration: none;
     padding-top: 18px;
@@ -184,8 +184,11 @@ form input, form textarea {
     display: block;
     width: 100%;
     border: none;
-    color: rgb(221, 219, 219);
     font-size: 1rem;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: rgb(221, 219, 219);
 }
 
 .field {
@@ -277,7 +280,7 @@ footer a {
     display: block;
     color: white;
     margin: 0 20px;
-    font-size: 48px;
+    font-size: 3.4rem;
 }
 
 footer a:hover {
