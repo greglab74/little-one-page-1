@@ -147,7 +147,7 @@ section > p {
 }
 
 .nom {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
@@ -208,7 +208,7 @@ form input::placeholder, form textarea::placeholder {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 1.2rem;
     color: rgb(221, 219, 219);
 }
 
