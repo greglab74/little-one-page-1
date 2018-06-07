@@ -9,12 +9,17 @@
     scroll-behavior: smooth;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: var(--source);
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
 }
 
 a {
@@ -40,12 +45,16 @@ header {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     text-transform: uppercase;
 }
 
 #head-title p, h2 {
-    font-size: 2.4rem;
+    font-size: 3.6rem;
+}
+
+#head-title p {
+    line-height: 3.8rem;
 }
 
 #head-title {
@@ -90,7 +99,7 @@ nav a {
     width: 132px;
     border-left: 2px solid white;
     border-right: 2px solid white;
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     color: white;
     text-decoration: none;
     padding-top: 18px;
@@ -172,7 +181,7 @@ section > p {
 }
 
 .nom {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -206,10 +215,11 @@ form {
 }
 
 form input, form textarea {
+    font-family: var(--source);
     display: block;
     width: 100%;
     border: none;
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
 
 form input::placeholder, form textarea::placeholder {
@@ -233,7 +243,7 @@ form input::placeholder, form textarea::placeholder {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: rgb(221, 219, 219);
 }
 
@@ -244,13 +254,12 @@ form input {
 
 .fa-comment {
     top: 20% !important;
-    transform: translate(-50%, -82%) !important;
+    transform: translate(-50%, -85%) !important;
 }
 
 form textarea {
     resize: none;
-    height: 151px;
-    margin-bottom: 34px;
+    height: 185px;
     padding: 20px 20px 20px 0px;
 }
 
@@ -268,6 +277,7 @@ form input[type="submit"] {
     box-shadow: 0 5px 32px 0 #939EB3;
     cursor: pointer;
     padding: 0 8px;
+    margin-top: 35px;
 }
 
 form input[type="submit"]:hover {
@@ -305,7 +315,7 @@ footer a {
     display: block;
     color: white;
     margin: 0 20px;
-    font-size: 3.4rem;
+    font-size: 5rem;
 }
 
 footer a:hover {
